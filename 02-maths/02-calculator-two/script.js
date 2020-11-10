@@ -12,32 +12,26 @@
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
     var performOperation = operation => {
+        var x = Number(document.getElementById("op-one").value);
+        var y = Number(document.getElementById("op-two").value);
         // perform the operation
         switch (operation) {
-        case 'addition' :
-            var x = Number(document.getElementById("op-one").value);
-            var y = Number(document.getElementById("op-two").value);
-            var sum = x + y;
-            alert(sum);
-            break;
-        case 'substraction' :
-            var a = Number(document.getElementById("op-one").value);
-            var b = Number(document.getElementById("op-two").value);
-            var deduct = a - b;
-            alert(deduct);
-            break;
-        case 'multiplication' :
-            var c = Number(document.getElementById("op-one").value);
-            var d = Number(document.getElementById("op-two").value);
-            var multi = c * d;
-            alert(multi);
-            break;
-        case 'division' :
-            var e = Number(document.getElementById("op-one").value);
-            var f = Number(document.getElementById("op-two").value);
-            var divis = e / f;
-            alert(divis);
-            break;
+            case 'addition':
+                var sum = x + y;
+                alert(sum);
+                break;
+            case 'substraction':
+                var deduct = x - y;
+                alert(deduct);
+                break;
+            case 'multiplication':
+                var multi = x * y;
+                alert(multi);
+                break;
+            case 'division':
+                var divis = x / y;
+                alert(divis);
+                break;
         }
     };
 
@@ -48,5 +42,3 @@
         ),
     );
 })();
-
-
