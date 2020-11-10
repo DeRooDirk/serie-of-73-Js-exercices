@@ -9,8 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
+function changeBg(color) {
     // your code here
+    document.body.style.background = color
 
-})();
+
+}
+changeBg();
