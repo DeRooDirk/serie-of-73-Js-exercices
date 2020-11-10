@@ -32,6 +32,9 @@
                 var divis = x / y;
                 alert(divis);
                 break;
+            default:
+                var def = "Nobody likes this ";
+                alert(def);
         }
     };
 
