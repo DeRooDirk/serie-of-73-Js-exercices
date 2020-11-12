@@ -29,5 +29,11 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        //new array filter fruits 
+        const newArrayFruits = fruits.filter((fruit, index) => fruits.indexOf(fruit) === index);
+        console.log(newArrayFruits);
+
+    });
 
 })();
