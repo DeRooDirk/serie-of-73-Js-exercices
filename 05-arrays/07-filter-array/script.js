@@ -11,8 +11,7 @@
 
 (function() {
 
-    const people = [
-        {
+    const people = [{
             firstname: "Dreddy",
             lastname: "Nussgen",
             age: 70,
@@ -90,5 +89,17 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        //displays younger or equal then 18 
+
+        //  let newArray = people.filter(persoon => { return persoon.age <= 18; });
+
+        //displays all older then 18 
+
+        let newArray = people.filter(persoon => { return persoon.age > 18; });
+
+        console.log(newArray);
+    });
 
 })();
