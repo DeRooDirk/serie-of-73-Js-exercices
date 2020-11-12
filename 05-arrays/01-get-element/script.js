@@ -27,5 +27,9 @@
     ];
 
     // your code here
-
+    // add an event listener to the button with id run 
+    document.getElementById("run").addEventListener("click", function() {
+        //in the array fruits sort the forth item starting from  apple is 0 ,pear is 1 ,enz 
+        console.log(fruits[3]);
+    });
 })();
