@@ -8,11 +8,22 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+function zoo() {
 
-(function() {
+    let currentDate = new Date();
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    if (currentDate.getHours() < 18) {
+        document.getElementById("target").innerHTML = "Hello!";
+    } else {
+        document.getElementById("target").innerHTML = "Good Evening!!";
+    }
 
-    // your code here
+}
+zoo();
 
-})();
+
+
+
+// to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+
+// your code here
