@@ -39,8 +39,6 @@
         } else {
             console.log("We have no Cherry's , nobody got time for that !!   ");
         }
-
-
         //Adding Banana&kiwi
         fruits.add("banananas");
         fruits.add("kiwini");
