@@ -12,6 +12,8 @@
 function spooky() {
     //we listen to an event  (button id run  clicked)
     document.getElementById("run").addEventListener("click", function() {
-                // We get the year to test 
-                let testYear = document.getElementById("year").value;
-                //we test
+            // We get the year to test 
+            let testYear = document.getElementById("year").value;
+            //we test
+        }
+    };
