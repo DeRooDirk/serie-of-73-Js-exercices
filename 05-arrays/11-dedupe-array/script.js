@@ -30,8 +30,9 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", () => {
-        //new array filter fruits 
+        //new array filter fruits  check fruit aginst plce in array  to determine doubles 
         const newArrayFruits = fruits.filter((fruit, index) => fruits.indexOf(fruit) === index);
+        //log new array 
         console.log(newArrayFruits);
 
     });
