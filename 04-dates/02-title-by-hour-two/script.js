@@ -9,10 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
+function zoo2() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let dateHour = new Date();
 
-    // your code here
+    if (dateHour.getHours() < 18 && dateHour.getMinutes() < 30) {
+        document.getElementById("target").innerHTML = "Hello!";
+    } else {
+        document.getElementById("target").innerHTML = "Good Evening!!";
+    }
 
-})();
+}
+zoo2();

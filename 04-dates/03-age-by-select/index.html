@@ -1,39 +1,33 @@
-<!--
- * becode/javascript
- *
- * /04-dates/03-age-by-select/index.html - 4.3: calculateur d'âge
- *
- * coded by leny@BeCode
- * started at 26/10/2018
--->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>BeCode/JavaScript - 4.3: calculate the age</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-        <link rel="stylesheet" href="../../_shared/css/normalize.css" />
-        <link rel="stylesheet" href="../../_shared/css/styles.css" />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>BeCode / JavaScript</h1>
-                <h2>
-                    <span>4.3</span>
-                    <strong>Calculate the age</strong>
-                </h2>
-            </header>
-            <div class="content">
-                <section class="explain">
-                    <p>On the click to the button, get the birthdate of the visitor and display his/her age.</p>
-                </section>
-                <section class="material">
-                    <form action="#" method="post">
-                        <div class="field dob">
-                            <label for="dob-day">Day:</label>
-                            <select name="dob-day" id="dob-day">
+<head>
+    <meta charset="UTF-8" />
+    <title>BeCode/JavaScript - 4.3: calculate the age</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="../../_shared/css/normalize.css" />
+    <link rel="stylesheet" href="../../_shared/css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>BeCode / JavaScript</h1>
+            <h2>
+                <span>4.3</span>
+                <strong>Calculate the age</strong>
+            </h2>
+        </header>
+        <div class="content">
+            <section class="explain">
+                <p>On the click to the button, get the birthdate of the visitor and display his/her age.</p>
+            </section>
+            <section class="material">
+                <form action="#" method="post">
+                    <div class="field dob">
+                        <label for="dob-day">Day:</label>
+                        <select name="dob-day" id="dob-day">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -66,10 +60,10 @@
                                 <option value="30">30</option>
                                 <option value="31">31</option>
                             </select>
-                        </div>
-                        <div class="field dob">
-                            <label for="dob-month">Month:</label>
-                            <select name="dob-month" id="dob-month">
+                    </div>
+                    <div class="field dob">
+                        <label for="dob-month">Month:</label>
+                        <select name="dob-month" id="dob-month">
                                 <option value="1">January</option>
                                 <option value="2">February</option>
                                 <option value="3">March</option>
@@ -83,10 +77,10 @@
                                 <option value="11">November</option>
                                 <option value="12">Décember</option>
                             </select>
-                        </div>
-                        <div class="field dob">
-                            <label for="dob-year">Year:</label>
-                            <select name="dob-year" id="dob-year">
+                    </div>
+                    <div class="field dob">
+                        <label for="dob-year">Year:</label>
+                        <select name="dob-year" id="dob-year">
                                 <option value="1955">1955</option>
                                 <option value="1956">1956</option>
                                 <option value="1957">1957</option>
@@ -139,15 +133,17 @@
                                 <option value="2004">2004</option>
                                 <option value="2005">2005</option>
                             </select>
-                        </div>
-                        <div class="actions">
-                            <button type="button" id="run">Run the script</button>
-                        </div>
-                    </form>
-                </section>      </div>
+                    </div>
+                    <div class="actions">
+                        <button type="button" id="run">Run the script</button>
+                    </div>
+                    <span id="result"></span>
+                </form>
+            </section>
         </div>
+    </div>
 
-        <script src="./script.js"></script>
-    </body>
+    <script src="./script.js"></script>
+</body>
+
 </html>
-
