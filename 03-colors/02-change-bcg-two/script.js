@@ -12,5 +12,5 @@
 function getColor() {
     // your code here
     var color = document.getElementById("color").value;
-    document.body.style.background = color
-};
+    document.body.style.background = color;
+}

@@ -11,8 +11,6 @@
 
 function changeBg(color) {
     // your code here
-    document.body.style.background = color
-
-
+    document.body.style.background = color;
 }
 changeBg();
