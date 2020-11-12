@@ -24,4 +24,28 @@
     ]);
 
     // your code here
+
+    //click in html 
+    document.getElementById("run").addEventListener("click", () => {
+        //check for apple , delete apple 
+        if (fruits.has("apple")) {
+            fruits.delete("apple");
+        } else {
+            console.log("We have no Apple's , nobody got time for that !!  ");
+        }
+        // Check for cherry delete cherry 
+        if (fruits.has("cherry")) {
+            fruits.delete("cherry");
+        } else {
+            console.log("We have no Cherry's , nobody got time for that !!   ");
+        }
+
+
+        //Adding Banana&kiwi
+        fruits.add("banananas");
+        fruits.add("kiwini");
+        //Log new array fruits
+        console.log(fruits);
+
+    });
 })();
