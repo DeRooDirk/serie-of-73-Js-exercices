@@ -10,7 +10,34 @@
 // You will have time to focus on it later.
 
 (() => {
+
+    // your code here
+
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+
+    // Mapping the two arrays  (how to map array )
+    let newArray = new Map();
+    keys.forEach((item, index) => {
+        newArray.set(item, values[index]);
+    });
+
+    //Creating the Object
+    const pet = Object.fromEntries(newArray);
+    //When click (eventlistener)
+    document.getElementById("run").addEventListener("click", () => {
+
+        //Printing Keys (same exersise before )
+        console.log("  *- Keys  -*   ");
+        Object.keys(pet).forEach(Key => {
+            console.log(Key);
+        });
+
+        //Printing Values
+        console.log(" *- Values -*  ");
+        Object.values(pet).forEach(Value => {
+            console.log(Value);
+        });
+
+    });
 })();
