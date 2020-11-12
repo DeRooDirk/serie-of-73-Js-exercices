@@ -11,15 +11,15 @@
 
 (() => {
     const computers = [
-        {id: "0001", available: false, user: "leny", os: "macOS"},
-        {id: "0002", available: false, user: "Nicolas"},
-        {id: "0003"},
-        {id: "0004", os: "Windows"},
-        {id: "0005"},
-        {id: "0006", os: "macOS"},
-        {id: "0007"},
-        {id: "0008"},
-        {id: "0009", available: false, user: "Anthony"},
+        { id: "0001", available: false, user: "leny", os: "macOS" },
+        { id: "0002", available: false, user: "Nicolas" },
+        { id: "0003" },
+        { id: "0004", os: "Windows" },
+        { id: "0005" },
+        { id: "0006", os: "macOS" },
+        { id: "0007" },
+        { id: "0008" },
+        { id: "0009", available: false, user: "Anthony" },
     ];
     const defaultProps = {
         available: true,
@@ -27,4 +27,16 @@
         user: null,
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        //voor iedere computer in computers
+        computers.forEach(computer => {
+
+            if (!computer.hasOwnProperty('available')) { computer.available = defaultProps.available; }
+            if (!computer.hasOwnProperty('user')) { computer.user = defaultProps.user; }
+            if (!computer.hasOwnProperty('os')) { computer.os = defaultProps.os; }
+        });
+
+        console.log(computers);
+
+    });
 })();
