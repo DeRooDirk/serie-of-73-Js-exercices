@@ -19,4 +19,20 @@
         status: "married",
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+        //Printing Keys
+        console.log("  *- Keys -*   ");
+        // Look for keys in object person for each key print key 
+        Object.keys(person).forEach(Keys => {
+            console.log(Keys);
+        });
+
+        //Printing Values
+        console.log(" *- Values -*  ");
+        // from some object take value object = person  , for each value print value
+        Object.values(person).forEach(Value => {
+            console.log(Value);
+        });
+    });
 })();
