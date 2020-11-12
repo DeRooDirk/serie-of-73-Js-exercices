@@ -9,7 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
+
+// your code here
+function zoo() {
 
     var fruits = [
         "apple",
@@ -26,6 +29,12 @@
         "cherry",
     ];
 
-    // your code here
-
-})();
+    document.getElementById("run").addEventListener("click", function() {
+        //i is de teller , i kleiner als aantal fruits(array) , teller +1
+        for (i = 0; i < fruits.length; i++) {
+            //console logs the fruit at that count 
+            console.log(fruits[i]);
+        }
+    });
+}
+zoo();
