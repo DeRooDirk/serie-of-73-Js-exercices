@@ -27,5 +27,14 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        let apple = fruits.find(fruit => { return fruit === "apple"; });
+        if (apple === "apple") {
+            console.log("Found  an Apple..!!");
+        } else {
+            console.log(" NOT found an Apple..!! ");
+        }
+    });
 
 })();
