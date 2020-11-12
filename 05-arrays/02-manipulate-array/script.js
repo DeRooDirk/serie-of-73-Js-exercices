@@ -25,5 +25,20 @@
     ];
 
     // your code here
+    // add an event listener to the button with id run 
+    document.getElementById("run").addEventListener("click", function() {
 
+        //Deleting first element
+        fruits.splice(0, 1);
+
+        //Deleting last element
+        fruits.splice(-1, 1);
+
+        //Adding Banananas at the beginning 
+        fruits.splice(0, 0, "banananas");
+
+        //Adding Kiwi at the end
+        fruits.splice(-1, 1, "kiwi");
+        document.getElementById("result").innerHTML = "<h3>" + fruits + "</h3>";
+    });
 })();
