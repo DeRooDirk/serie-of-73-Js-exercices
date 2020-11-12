@@ -11,8 +11,7 @@
 
 (function() {
 
-    var people = [
-        {
+    var people = [{
             firstname: "Garald",
             lastname: "Freschi",
             email: "gfreschi0@discuz.net",
@@ -40,5 +39,12 @@
     ];
 
     // your code here
+    //Get Click to strt function
+    document.getElementById("run").addEventListener("click", function() {
+
+        people.forEach(function(value) {
+            console.log(value.firstname);
+        });
+    });
 
 })();

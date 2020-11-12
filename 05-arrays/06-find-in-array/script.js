@@ -11,8 +11,7 @@
 
 (function() {
 
-    const people = [
-        {
+    const people = [{
             firstname: "Bradford",
             lastname: "Coldbath",
             email: "bcoldbath0@wired.com",
@@ -91,4 +90,11 @@
 
     // your code here
 
+    //We look for the Click in id run 
+    document.getElementById("run").addEventListener("click", function() {
+
+        let peopleIndex = people.findIndex(person => person.firstname === "Jean" && person.lastname === "Dupont");
+        console.log("Email: " + people[peopleIndex].email + "  index: " + peopleIndex);
+
+    });
 })();
