@@ -11,18 +11,18 @@
 
 (() => {
     const birds = [
-        {name: "seagull", num: 1},
-        {name: "raven", num: 3},
-        {name: "chickadee", num: 2},
-        {name: "owl", num: 4},
-        {name: "buzzard", num: 8},
-        {name: "pigeon", num: 1},
-        {name: "magpie", num: 3},
-        {name: "vulture", num: 2},
-        {name: "falcon", num: 1},
-        {name: "robin", num: 2},
-        {name: "dove", num: 1},
-        {name: "crow", num: 5},
+        { name: "seagull", num: 1 },
+        { name: "raven", num: 3 },
+        { name: "chickadee", num: 2 },
+        { name: "owl", num: 4 },
+        { name: "buzzard", num: 8 },
+        { name: "pigeon", num: 1 },
+        { name: "magpie", num: 3 },
+        { name: "vulture", num: 2 },
+        { name: "falcon", num: 1 },
+        { name: "robin", num: 2 },
+        { name: "dove", num: 1 },
+        { name: "crow", num: 5 },
     ];
     const adjectives = new Set([
         "gray",
@@ -39,4 +39,22 @@
     ]);
 
     // your code here
+    //get click
+    document.getElementById("run").addEventListener("click", () => {
+        //Creating new 
+        let singleBird = [];
+        let adjective = [];
+        let newArrayAdjectives = Array.from(adjectives);
+
+        //
+        singleBird.push(birds[Math.floor(Math.random() * (birds.length))]);
+        adjective.push(newArrayAdjectives[Math.floor(Math.random() * (newArrayAdjectives.length))]);
+
+        if (singleBird[0].num > 1) {
+            document.getElementById("target").innerHTML = "<p>" + "A few " + adjective + " " + singleBird[0].name + "s" + " </p>";
+        } else {
+            document.getElementById("target").innerHTML = "<p>" + "A " + adjective + " " + singleBird[0].name + " </p>";
+        }
+
+    });
 })();
