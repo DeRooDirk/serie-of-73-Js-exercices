@@ -28,7 +28,7 @@
             age--;
         }
         //display results in a box ( id result )
-        document.getElementById("result").innerHTML = " <h4 style=\"text-align: center;\"> His/Her age is: " + age + " Years old!! </h4>";
+        document.getElementById("result").innerHTML = " <p> Has seen " + age + " Winters !! </p>";
 
     });
 
