@@ -23,4 +23,12 @@
     ]);
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        console.log("the number of persons in the array is ! : " + people.size);
+        if (people.has("Alexandre")) {
+            console.log("Alexandre is in the array ");
+        };
+    });
+
 })();

@@ -7,13 +7,4 @@
  */
 
 // NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.(function () {
-
-function spooky() {
-    //we listen to an event  (button id run  clicked)
-    document.getElementById("run").addEventListener("click", function() {
-        // We get the year to test 
-        let testYear = document.getElementById("year").value;
-        //we test
-    });
-}
+// You will have time to focus on it later.(function () {(function() {
