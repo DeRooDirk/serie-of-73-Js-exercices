@@ -97,7 +97,9 @@
 
         //displays all older then 18 
 
-        let newArray = people.filter(persoon => { return persoon.age > 18; });
+        let newArray = people.filter(persoon => {
+            return persoon.age > 18;
+        });
 
         console.log(newArray);
     });
