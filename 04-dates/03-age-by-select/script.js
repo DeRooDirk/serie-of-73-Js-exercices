@@ -15,16 +15,20 @@
     // Add en event listerenr to button ( id run )
     document.getElementById("run").addEventListener("click", function() {
         // Get today's date 
-        let datumVandaag = new Date();
+        let currentDate = new Date();
         // Get Birthday from form 
-        let verjaardag = new Date(document.getElementById("dob-year").value, document.getElementById("dob-month").value, document.getElementById("dob-day").value);
+        let BirthDate = new Date(
+            document.getElementById("dob-year").value,
+            document.getElementById("dob-month").value,
+            document.getElementById("dob-day").value
+        );
         //calculate age year and month (datum - birthrecords)
-        let age = datumVandaag.getFullYear() - verjaardag.getFullYear();
-        let months = datumVandaag.getMonth() - verjaardag.getMonth();
+        let age = currentDate.getFullYear() - BirthDate.getFullYear();
+        let months = currentDate.getMonth() - BirthDate.getMonth();
 
 
         // if we are in a different month or/and day of birthday. 
-        if (months < 0 || (months === 0 && datumVandaag.getDate() < verjaardag.getDate())) {
+        if (months < 0 || (months === 0 && currentDate.getDate() < BirthDate.getDate())) {
             age--;
         }
         //display results in a box ( id result )

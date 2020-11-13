@@ -31,9 +31,15 @@
         //voor iedere computer in computers
         computers.forEach(computer => {
             //check value replace value 
-            if (!computer.hasOwnProperty('available')) { computer.available = defaultProps.available; }
-            if (!computer.hasOwnProperty('user')) { computer.user = defaultProps.user; }
-            if (!computer.hasOwnProperty('os')) { computer.os = defaultProps.os; }
+            if (!computer.hasOwnProperty('available')) {
+                computer.available = defaultProps.available;
+            }
+            if (!computer.hasOwnProperty('user')) {
+                computer.user = defaultProps.user;
+            }
+            if (!computer.hasOwnProperty('os')) {
+                computer.os = defaultProps.os;
+            }
         });
 
         console.log(computers);
