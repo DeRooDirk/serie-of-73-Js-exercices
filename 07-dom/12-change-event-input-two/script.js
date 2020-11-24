@@ -11,6 +11,30 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("pass-one").oninput = () => {
+        let myNumb = document.getElementById("pass-one").value;
+        //javaScript RegExp \d Metacharacter  W3shools looks for  digits
+        let regExp = /\d/g;
+        //creating a let to store the digits in  found by regExp
+        let searchNumbers;
+
+
+        if (myNumb.length >= 8) {
+            searchNumbers = myNumb.match(regExp);
+            if (searchNumbers !== null) {
+                spagettiNumbers = searchNumbers.length;
+            } else {
+                spagettiNumbers = 0;
+            }
+
+            if (spagettiNumbers >= 2) {
+                document.getElementById("validity").innerHTML = "ok";
+            } else {
+                document.getElementById("validity").innerHTML = "Not ok";
+            }
+        } else {
+            document.getElementById("validity").innerHTML = "Not ok";
+        }
+    };
 
 })();

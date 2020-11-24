@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+    //Getting the original Class
+    let originalClass = document.getElementById("pass-one").className;
+
+    document.getElementById("run").onclick = () => {
+
+        let passOne = document.getElementById("pass-one");
+        let passTwo = document.getElementById("pass-two");
+
+        if (passOne.value === passTwo.value) {
+            //Equals&same
+            passOne.className = originalClass;
+            passTwo.className = originalClass;
+        } else {
+            passOne.className = "error";
+            passTwo.className = "error";
+
+
+        }
+
+    };
 
 })();

@@ -11,6 +11,21 @@
 
 (function() {
 
-    // your code here
+    let passwoord = document.getElementById("pass-one");
+
+
+    //Listening to keypresses 
+    passwoord.onkeypress = () => {
+        let size = document.getElementById("pass-one").value.length;
+        // or use (size >9)
+        if (size >= 10) {
+            return false;
+        }
+    };
+    //looking for input
+    passwoord.oninput = () => {
+        let size = document.getElementById("pass-one").value.length;
+        document.getElementById("counter").innerHTML = size + "/10";
+    };
 
 })();

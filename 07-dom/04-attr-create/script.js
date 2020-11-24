@@ -22,8 +22,6 @@
 
     img.src = oldKitten.getAttribute("data-image");
     img.id = "myKitten";
-    img.style.display = "block";
-    img.style.margin = "auto";
 
     //Adding the new one
     targetContainer.appendChild(img);
