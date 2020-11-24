@@ -11,6 +11,5 @@
 
 (function() {
 
-    // your code here
-
+    document.querySelectorAll("p.target").forEach(myParagraph => myParagraph.innerHTML = "owned");
 })();

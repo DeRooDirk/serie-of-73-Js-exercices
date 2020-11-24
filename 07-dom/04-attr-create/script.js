@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+    //Getting the old element (source)
+    let oldKitten = document.getElementById("source");
+
+    //Getting the container (the )
+    let targetContainer = document.getElementById("target");
+
+    //Creating image 
+    let img = document.createElement("img");
+
+    img.src = oldKitten.getAttribute("data-image");
+    img.id = "myKitten";
+    img.style.display = "block";
+    img.style.margin = "auto";
+
+    //Adding the new one
+    targetContainer.appendChild(img);
+
+    //Removing the old element
+    oldKitten.remove();
+
 
 })();

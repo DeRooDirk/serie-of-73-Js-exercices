@@ -11,7 +11,7 @@
 
 (function() {
 
-    var gallery= [
+    var gallery = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -19,6 +19,16 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    let firstImg = document.getElementsByTagName("img")[0];
+    let nextImg = 0;
+
+    document.getElementById("next").onclick = () => {
+        if (nextImg === 4) {
+            nextImg = 0;
+        } else {
+            ++nextImg;
+        }
+        firstImg.src = gallery[nextImg];
+    };
 
 })();

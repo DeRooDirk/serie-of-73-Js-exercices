@@ -1,16 +1,9 @@
-/* becode/javascript
- *
- * /06-dom/05-hover-image/script.js - 6.5: survol d'image
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
-
 (function() {
+    let container = document.getElementsByTagName("img")[0];
+    let oldImg = container.src;
+    let newImg = container.getAttribute("data-hover");
 
-    // your code here
+    container.addEventListener("mouseover", () => { container.src = newImg; });
+    container.onmouseout = () => { container.src = oldImg; };
 
 })();
