@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
+    var theSlider = document.getElementById("slider");
+    var theTarget = document.getElementById("target");
 
-    // your code here
+    theSlider.oninput = () => {
+        theTarget.innerHTML = "0" + theSlider.value;
+    };
 
 })();

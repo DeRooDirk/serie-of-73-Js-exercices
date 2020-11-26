@@ -1,16 +1,19 @@
-/* becode/javascript
- *
- * /07-misc/02-typewriter-effect/script.js - 7.2: effet machine à écrire
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
-
 (function() {
+    //Clear the target
+    document.getElementById("target").innerHTML = "";
 
-    // your code here
+    let messageTyped = text => {
+        let arrayMessage = text.split('');
 
+        let i = 0;
+        let printMessage = setInterval(() => {
+            document.getElementById("target").innerHTML += arrayMessage[i];
+            i++;
+            if (i === arrayMessage.length) {
+                clearInterval(printMessage);
+            }
+        }, 100);
+    };
+
+    messageTyped("Do not go where the path may lead, go instead where there is no path and leave a trail.");
 })();

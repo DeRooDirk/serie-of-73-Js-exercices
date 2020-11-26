@@ -9,8 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+(function() {
+    var lastNumber = localStorage.getItem("counter");
+    console.log(lastNumber);
+    if (lastNumber == null) { lastNumber = 0; } else { document.getElementById("target").innerHTML = lastNumber; }
+
+
+    document.getElementById("increment").onclick = () => {
+        lastNumber++;
+        document.getElementById("target").innerHTML = lastNumber;
+        localStorage.setItem("counter", lastNumber);
+    };
 
 })();
