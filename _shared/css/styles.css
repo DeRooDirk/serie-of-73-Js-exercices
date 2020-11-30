@@ -270,14 +270,3 @@ ol#target {
     font-size: 1.4rem;
     color: slategray;
 }
-#result{
-    height: 30px ;
-    width: 200px;
-    border: 1px solid rgba(0, 0, 0, 0.207);
-    background-color:#E8F0FE ;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    padding: 5px;
-    
-}

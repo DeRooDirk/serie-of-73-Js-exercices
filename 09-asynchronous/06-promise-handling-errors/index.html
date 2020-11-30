@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>BeCode/JavaScript - 10.6: Handling errors (Promise)</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="../../_shared/css/normalize.css" />
+    <link rel="stylesheet" href="../../_shared/css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>BeCode / JavaScript</h1>
+            <h2>
+                <span>10.6</span>
+                <strong>gestion d'erreur (Promise)</strong>
+            </h2>
+        </header>
+        <div class="content">
+            <section class="explain">
+                <p>
+                    The function <strong>window.lib.getPersons()</strong> is available in the script. It returns a <strong>Promise</strong> that will be resolved, after a short delay, with a table of people.
+                </p>
+                <p>
+                    When you click on the button, call the getPersons function and display the result obtained in the console. Warning: the Promise returned by the getPersons function has more or less a half chance of being rejected with an error. If so, use console.error()
+                    to display it).
+                </p>
+            </section>
+            <section class="material">
+                <div class="actions">
+                    <button type="button" id="run">Run the script</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../../_shared/lib/utils.js"></script>
+    <script src="../../_shared/lib/promises.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

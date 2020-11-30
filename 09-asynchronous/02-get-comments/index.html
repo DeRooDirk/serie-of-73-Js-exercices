@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>BeCode/JavaScript - 10.2: Get articles and comments</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="../../_shared/css/normalize.css" />
+    <link rel="stylesheet" href="../../_shared/css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>BeCode / JavaScript</h1>
+            <h2>
+                <span>10.2</span>
+                <strong>Get articles and comments</strong>
+            </h2>
+        </header>
+        <div class="content">
+            <section class="explain">
+                <p>
+                    You must have noticed, in the previous exercise, that the articles received via the <strong>window.lib.getPosts</strong> function included an <strong>id property</strong>.
+                </p>
+                <p>
+                    The function <strong>window.lib.getComments()</strong> is available in the script. It must receive an article id as the first parameter, as well as a callback as the second parameter. After a short delay, the callback will be executed
+                    with two parameters: the first one contains an error (if there is one, if not null), the second one an array of the comments of the article.
+                </p>
+                <p>
+                    When you click on the button, call the getPosts function. For each recovered item, call the getComments function and add the comments obtained in a comments property of the item. Display items in the console (getPosts and getComments functions never return
+                    errors).
+                </p>
+            </section>
+            <section class="material">
+                <div class="actions">
+                    <button type="button" id="run">Run the script</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../../_shared/lib/utils.js"></script>
+    <script src="../../_shared/lib/callbacks.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
