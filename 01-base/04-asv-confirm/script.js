@@ -15,20 +15,16 @@ var homeTown = prompt("Please enter your Hometown");
 var result = confirm("you are " + age +" years old " + gender + " and from the town "+ homeTown );
 */
 
-function questions(){
+function questions() {
     var age = prompt("Please enter your age ");
     var gender = prompt("Please enter your gender ");
     var homeTown = prompt("Please enter your Hometown");
-    var result = confirm("you are " + age +" years old " + gender + " and from the town "+ homeTown );
-    if (result == true){
-        console.log("welcome")
-        return true
-    }else{        
-        questions()       
+    var result = confirm("you are " + age + " years old " + gender + " and from the town " + homeTown);
+    if (result == true) {
+        console.log("welcome");
+        return true;
+    } else {
+        questions();
     }
 }
 questions();
-
-
-
-

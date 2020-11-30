@@ -27,7 +27,7 @@
         //The .map function in this case goes over every element (represented by the x and converts it to an integer).     
         var numbers = document.getElementById("numbers").value.split(', ').map(x => +x);
         // we need to add a function by parameter that sorts numerically.
-        numbers = numbers.sort(function(a, b) { return a - b });
+        numbers = numbers.sort(function(a, b) { return a - b; });
         alert("Sorted numbers:" + numbers.toString());
     });
 })();
