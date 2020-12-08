@@ -11,8 +11,8 @@
 
 var user = prompt("please enter your name ");
 var answer = prompt("Hello " + user + " ! , Do you want to make some cake ? , yes or no ?  ");
-if (answer == "yes") {
-  alert("Congrats with your decision !!");
+if (answer == "yes", "y") {
+    alert("Congrats with your decision !!");
 } else {
-  alert("Go buy me a cake then !!!");
+    alert("Go buy me a cake then !!!");
 }
